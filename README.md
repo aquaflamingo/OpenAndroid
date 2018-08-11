@@ -10,9 +10,9 @@ This repository contains examples of Android applications built previously.
 
 ## Author
 
-[@RobertSimoes](www.robertsimoes.com)✝
+[@RobertSimoes](www.robertsimoes.com)¹
 
-✝ contributors are specified where applicable in their respective projects.
+¹: contributors are specified where applicable in their respective projects.
 
 ## Licence
 
