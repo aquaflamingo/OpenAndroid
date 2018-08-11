@@ -8,9 +8,10 @@ Regular alarm clocks can wake us up in the middle of nightly sleep cycles making
 
 With Hibernate, you can focus on the number of full sleep cycles you complete during the night as an indicator of your rest quality, by calculating your ideal bed time based on your morning alarm.
 
-![Hibernate Screenshot 1](images/hibernate1.jpg){:height="50%" width="50%"}
-![Hibernate Screenshot 2](images/hibernate2.jpg){:height="50%" width="50%"}
-![Hibernate Screenshot 3](images/hibernate3.jpg){:height="50%" width="50%"}
+<img src="https://raw.githubusercontent.com/robertsimoes/AndroidExamples/master/Hibernate/images/hibernate1.jpg" height=400 />
+<img src="https://raw.githubusercontent.com/robertsimoes/AndroidExamples/master/Hibernate/images/hibernate2.jpg" height=400 />
+<img src="https://raw.githubusercontent.com/robertsimoes/AndroidExamples/master/Hibernate/images/hibernate3.jpg" height=400 />
+
 
 ## Author
 
