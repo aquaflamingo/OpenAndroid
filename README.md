@@ -10,10 +10,10 @@ This repository contains examples of Android applications built previously.
 
 ## Author
 
-[@RobertSimoes](www.robertsimoes.com)*
+[@RobertSimoes](www.robertsimoes.com)✝
 
-* contributes specified where applicable in respective projects.
+✝ contributors are specified where applicable in their respective projects.
 
 ## Licence
 
-[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+This repository is licenced under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
