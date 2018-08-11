@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/main_imageview_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:adjustViewBounds="true"
+        android:src="@android:color/transparent"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:padding="@dimen/_36"
+        android:layout_marginTop="@dimen/_36"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true"
+            android:gravity="center"
+            android:text="Aim to sleep by"
+            android:textColor="#FFF"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="15"
+            android:textSize="@dimen/text_18" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true"
+            android:text="11:00pm"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_48"
+            android:id="@+id/main_tv_target_time"
+            android:textStyle="bold" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="15"
+            android:id="@+id/main_tv_cycle_count"
+            android:text="5 Full Cycles"
+            android:textColor="#FFF"
+            android:textSize="@dimen/text_18" />
+
+        <LinearLayout
+            android:clickable="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_24"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:id="@+id/main_tv_photo_title"
+                android:textColor="@color/white"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="15"
+                android:shadowColor="@color/black_overlay"
+                android:text=""/>
+            <TextView
+                android:textSize="@dimen/text_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_tv_photo_author"
+                android:keepScreenOn="true"
+                android:textColor="@color/white"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="15"
+                android:shadowColor="@color/black_overlay"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

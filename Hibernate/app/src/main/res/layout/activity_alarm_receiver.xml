@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111"
+    android:alpha="0.75"
+    tools:context="com.pressurelabs.hibernate.ui.activities.WakeUpActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextH2"
+            android:textColor="@color/white"
+            android:padding="@dimen/_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/good_morning"/>
+
+        <Button
+            style="@style/DismissButton"
+            android:id="@+id/button_alarm_dismiss"
+            android:text="@string/dismiss"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_96"
+            android:layout_height="@dimen/_96" />
+    </LinearLayout>
+
+
+</FrameLayout>

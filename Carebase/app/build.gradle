@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.hci.carebase"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    apply plugin: 'com.google.gms.google-services'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:design:26.0.0'
+
+    compile 'com.google.firebase:firebase-storage:11.4.2'
+    compile 'com.google.firebase:firebase-core:11.4.2'
+    compile 'com.google.firebase:firebase-auth:11.4.2'
+    compile 'com.google.firebase:firebase-database:11.4.2'
+
+    compile 'com.android.support:cardview-v7:26.0.0'
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+    // Fabs
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+
+
+    // Butterknife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    // PaperOnBoard
+
+    compile 'com.ramotion.paperonboarding:paper-onboarding:1.1.1'
+    // Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    // Circle IMage View
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+
+    testCompile 'junit:junit:4.12'
+}
+
+

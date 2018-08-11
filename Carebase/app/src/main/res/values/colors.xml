@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- I made the primary and dark the same FIXME -->
+    <color name="colorPrimaryDark">#560248</color>
+    <color name="colorPrimary">#FF0080</color>
+    <!--<color name="colorPrimaryDark">#D00080</color>-->
+    <color name="colorAccent">#FFAC00</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGray">#888</color>
+    <color name="colorDarkWhite">#eee</color>
+    <color name="colorGreen">#55D25F</color>
+</resources>

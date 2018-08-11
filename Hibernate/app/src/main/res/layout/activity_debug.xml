@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_debug"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pressurelabs.hibernate.ui.activities.DebugActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="@dimen/_8"
+        style="@style/TextH1"
+        android:layout_width="match_parent"
+        android:text="@string/title_activity_debug"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_margin="@dimen/_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Alarm Intent"
+        android:onClick="sendAlarmIntent" />
+
+    <Button
+        android:layout_margin="@dimen/_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sleep Soon"
+        android:onClick="sleepSoon"/>
+
+    <Button
+        android:layout_margin="@dimen/_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Wallpaper"
+        android:onClick="sendWallpaper" />
+
+    <Button
+        android:layout_margin="@dimen/_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read Database"
+        android:onClick="readDb" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seed Db"
+        android:onClick="seedDb" />
+</LinearLayout>

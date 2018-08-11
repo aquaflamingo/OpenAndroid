@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_red_500">#F44336</color>
+    <color name="material_blue_500">#2ab8f7</color>
+    <color name="wisteria_purple">#8e44ad</color>
+    <color name="material_purple_500">#9C27B0</color>
+    <color name="white">#ffffff</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="accent_material_pink">#ff40cf</color>
+    <color name="material_blue_dark">#0052ea</color>
+    <color name="material_blue_light">#c1edff</color>
+    <color name="material_pink_500">#e60a55</color>
+    <color name="material_green_500">#12dbda</color>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.robertsimoes.hibernate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        tools:replace="android:theme"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/HibernateTheme">
+        <activity
+            android:name=".ui.activities.WakeUpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_alarm_receiver"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.activities.DebugActivity" />
+
+        <service
+            android:name=".ui.services.HibernateService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".ui.services.HibernateReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="INTENT_SLEEP_SOON_NOTIFICATION" />
+                <action android:name="INTENT_DAILY_500_PX" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="INTENT_START_TRACKING"/>
+                <action android:name="INTENT_END_TRACKING"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.activities.IntroductionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_introduction"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/HibernateTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

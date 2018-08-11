@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_inbox"
+        android:enabled="true"
+        android:title="@string/nav_inbox"
+        android:icon="@drawable/ic_action_inbox"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_appointments"
+        android:enabled="true"
+        android:title="@string/nav_appointments"
+        android:icon="@drawable/ic_action_appointments"
+
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_rx"
+        android:enabled="true"
+        android:title="@string/nav_title_rx"
+        android:icon="@drawable/ic_action_rx"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:title="@string/nav_profile"
+        android:icon="@drawable/ic_action_profile"
+        app:showAsAction="always" />
+
+    <!--<item-->
+        <!--android:id="@+id/action_debug"-->
+        <!--android:enabled="true"-->
+        <!--android:title="Debug"-->
+        <!--android:icon="@drawable/ic_action_debug"-->
+        <!--app:showAsAction="always" />-->
+
+</menu>

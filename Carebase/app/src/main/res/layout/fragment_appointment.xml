@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_appointment">
+
+    <LinearLayout
+        android:id="@+id/appts_ll_no_appts_available"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_8"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLightGray"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/no_current_appointments"/>
+        <TextView
+            android:layout_margin="@dimen/_8"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightGray"
+            android:text="@string/no_appts_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+            <!-- Latest Modular Section -->
+            <ViewSwitcher
+                android:id="@+id/vs_appointments_appts_pictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Latest Appointment -->
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8"
+                    android:elevation="@dimen/_8">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/_16"
+                        android:layout_marginRight="@dimen/_16"
+                        android:layout_marginTop="@dimen/_8"
+                        android:layout_marginBottom="@dimen/_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Confirmed -->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorLightGray"
+                                android:text="@string/your_appt_has_been"/>
+                            <TextView
+                                android:textAlignment="center"
+                                style="@style/TextAppearance.AppCompat.Display1"
+                                android:layout_width="match_parent"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/scheduled"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_16"
+                            android:layout_marginBottom="@dimen/_8"
+                            style="?android:attr/listSeparatorTextViewStyle"
+                            android:paddingTop="5dip"
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eee" />
+
+                        <!-- Hospital/Location-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="@dimen/_4"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/colorLightGray"
+                                android:text="@string/hospital"
+
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/card_tv_appt_hospital"
+                                android:text="Hospital"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+
+
+
+                        <!-- Doctor -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+
+                            android:layout_marginTop="@dimen/_4"
+                            android:layout_marginBottom="@dimen/_4"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/colorLightGray"
+                                android:text="@string/doctor"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/card_tv_appt_dr"
+                                android:text="Doctor"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+
+
+                        <!-- Date Time -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_4"
+                            android:layout_marginBottom="@dimen/_4"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/colorLightGray"
+                                android:text="@string/time"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/card_tv_appt_time"
+                                android:text="Sun Mar 30 2018"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+
+
+                        <!-- Prep -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_4"
+                            android:layout_marginBottom="@dimen/_4"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/colorLightGray"
+                                android:text="@string/prep"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/card_tv_appt_prep"
+                                android:text="No food or drink 24 hours prior to."
+                                style="@style/TextAppearance.AppCompat.Small"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_4"
+                            android:layout_marginBottom="@dimen/_4"
+                            style="?android:attr/listSeparatorTextViewStyle"
+                            android:paddingTop="5dip"
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eee" />
+
+                        <!-- Discussions -->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_8"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="@string/questions_comments"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <ViewSwitcher
+                                android:layout_marginBottom="@dimen/_8"
+                                android:id="@+id/vs_et_appointment_notes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/default_comments"
+                                        android:id="@+id/card_tv_patient_comments"/>
+
+                                    <TextView
+
+                                        android:layout_marginTop="@dimen/_16"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        style="@style/TextAppearance.AppCompat.Caption"
+                                        android:text="Attachments"/>
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:clickable="true"
+                                        android:layout_margin="@dimen/_8"
+                                        android:layout_width="@dimen/_72"
+                                        android:layout_height="@dimen/_72"
+                                        android:id="@+id/card_img_patient_attachment"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <EditText
+                                        android:id="@+id/card_et_patient_comments"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLength="250"/>
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="@dimen/_16"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <Button
+                                            android:id="@+id/card_button_save_comments"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="0.5"
+                                            android:textColor="@color/colorPrimary"
+                                            android:theme="@style/PrimaryFlatButton"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/save_comment"
+                                            android:layout_gravity="start"/>
+
+                                        <Button
+                                            android:id="@+id/card_button_cancel_edit_comments"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="0.5"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:text="@string/cancel"
+                                            android:textColor="@color/colorPrimary"
+                                            android:theme="@style/PrimaryFlatButton" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </ViewSwitcher>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView> <!-- End Card View for appointments -->
+
+                <!-- Take Picture-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Take a picture."/>
+                </LinearLayout>
+
+            </ViewSwitcher>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_menu_appts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="visible"
+            fab:fab_addButtonColorNormal="@color/colorWhite"
+            fab:fab_addButtonColorPressed="@color/colorAccent"
+            fab:fab_addButtonPlusIconColor="@color/colorPrimary"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_appt_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera_white_24"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_title="@string/fab_label_camera" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_appt_make_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit_pencil_white_24dp"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_title="@string/fab_label_make_note" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_appt_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock_white_24"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorPrimary"
+                fab:fab_title="@string/fab_label_schedule" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.support.design.widget.CoordinatorLayout>

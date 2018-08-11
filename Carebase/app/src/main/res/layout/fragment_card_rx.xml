@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/rx_card_view"
+    android:layout_margin="@dimen/_16"
+    android:elevation="@dimen/_12">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/_24"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.65"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rx_card_drug_name"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/_24"
+                    android:text="Drug Name"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/rx_card_drug_dose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rx_card_drug_name"
+                    android:textStyle="bold"
+                    android:text="dosage" />
+                <TextView
+                    android:id="@+id/rx_card_drug_issued"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rx_card_drug_dose"
+                    android:layout_marginTop="30dp"
+                    android:text="Issued: " />
+
+                <TextView
+                    android:id="@+id/side_effect_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Side Effect Include:" />
+                <TextView
+                    android:id="@+id/rx_card_drug_side_effects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/side_effect_label"
+                    android:text="effects" />
+
+            </LinearLayout>
+
+            <!-- Dosage Daily -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_margin="@dimen/_24"
+                android:paddingTop="16dp"
+                android:paddingBottom="@dimen/_16"
+                android:background="@drawable/rect_gradient"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="EXPIRES"/>
+
+                <TextView
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center_horizontal"
+                    android:text="Mar 03"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rx_card_expires_date_gradient"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_more_info"
+                android:id="@+id/rx_card_drug_show"
+                android:theme="@style/PrimaryFlatButton" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

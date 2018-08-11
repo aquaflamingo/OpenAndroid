@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_view_chart_1"
+
+                android:layout_margin="@dimen/_16"
+                app:cardElevation="4dp">
+                <android.support.design.widget.AppBarLayout
+                    style="@style/CardViewThemeAppBar"
+                    android:layout_width="match_parent"
+                    android:id="@+id/appbar_card_1"
+                    android:layout_height="wrap_content"
+                    app:elevation="0dp"
+                    android:minHeight="?android:attr/actionBarSize">
+                    <android.support.v7.widget.Toolbar
+                        style="@style/CardViewThemePop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:title="Title"
+                        android:id="@+id/toolbar_line_chart">
+                    </android.support.v7.widget.Toolbar>
+                </android.support.design.widget.AppBarLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="@dimen/_16"
+                        android:textColor="@color/material_blue_500"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/placeholder_chart_1_no_data_display"
+                        android:text="No Data!"/>
+            <lecho.lib.hellocharts.view.LineChartView
+                android:layout_marginTop="@dimen/_48"
+                android:padding="@dimen/_16"
+                android:id="@+id/line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="275dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_view_entry_list"
+            android:layout_margin="@dimen/_16"
+            app:cardElevation="4dp">
+            <android.support.design.widget.AppBarLayout
+                style="@style/CardViewThemeAppBar"
+                android:layout_width="match_parent"
+                android:id="@+id/appbar_card_2"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                android:minHeight="?android:attr/actionBarSize">
+                <android.support.v7.widget.Toolbar
+                    style="@style/CardViewThemePop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:title="Title"
+                    android:id="@+id/toolbar_list_entries">
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_16"
+                android:textColor="@color/material_blue_500"
+                android:textSize="20sp"
+                android:text="Feature coming soon!"
+                android:layout_height="wrap_content"
+                android:id="@+id/placeholder_entries_coming_soon"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:id="@+id/list_view_sleep_entries"/>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

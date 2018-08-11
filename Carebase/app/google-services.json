@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "540839684924",
+    "firebase_url": "https://carebase-2.firebaseio.com",
+    "project_id": "carebase-2",
+    "storage_bucket": "carebase-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540839684924:android:8ba91de6452142e3",
+        "android_client_info": {
+          "package_name": "com.hci.carebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540839684924-havqhirid2pnohk6o253igg31mdpnvdi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hci.carebase",
+            "certificate_hash": "f26645ff91f89bcff5792bd566fa1896a70893de"
+          }
+        },
+        {
+          "client_id": "540839684924-i2c6r1am34q9uddtm7cqtdqhfqhp8ukb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9R0I1Xo3lZ3HEY7iIE42qQKBEuSBHF7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540839684924-i2c6r1am34q9uddtm7cqtdqhfqhp8ukb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

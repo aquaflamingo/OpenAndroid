@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_profile"
+    android:background="#eeefff"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <ViewSwitcher
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_profile_vs"
+                android:layout_width="match_parent">
+
+                <!-- In Show mode View -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Header -->
+                    <LinearLayout
+                        android:background="@drawable/rect_gradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:orientation="vertical"
+                        android:paddingTop ="@dimen/_8"
+                        android:paddingBottom = "@dimen/_8">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:background="@drawable/circle"
+                            android:layout_margin="@dimen/_16"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="@dimen/_128"
+                            android:layout_height="@dimen/_128"
+                            android:id = "@+id/patient_profile_photo" />
+                        <LinearLayout
+                            android:layout_marginBottom="@dimen/_16"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="First Name"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:id = "@+id/patient_first_name"/>
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  "/>
+
+                            <TextView
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Last Name"
+                                android:id = "@+id/patient_last_name"/>
+                        </LinearLayout>
+
+                    </LinearLayout> <!-- Header end-->
+
+                    <!-- Birthday Blood Type -->
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_32"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Birthday -->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:paddingTop="@dimen/_8"
+                            android:paddingBottom="@dimen/_8">
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Birthday"/>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Birthday"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:id = "@+id/patient_birth_date"/>
+                        </LinearLayout>
+
+                        <!-- Blood Type -->
+                        <LinearLayout
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop ="@dimen/_8"
+                            android:paddingBottom = "@dimen/_8">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/blood_type" />
+                            <TextView
+                                android:textAlignment="center"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/blood_type"
+                                android:id = "@+id/patient_blood_type"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <!-- Height WEight -->
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- Height -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/_8"
+                            android:paddingBottom="@dimen/_8">
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/height"/>
+
+                            <TextView
+                                android:textAlignment="center"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/height"
+                                android:id = "@+id/patient_height"/>
+                        </LinearLayout>
+
+                        <!-- Weight -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/_8"
+                            android:paddingBottom="@dimen/_8">
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/weight"/>
+                            <TextView
+                                android:textAlignment="center"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:text="@string/weight"
+                                android:layout_height="wrap_content"
+                                android:id = "@+id/patient_weight"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <!-- Medical Conditions -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_16"
+                        android:paddingBottom="@dimen/_16">
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/medical_conditions"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Medical"
+                            android:id = "@+id/patient_medical_conditions"/>
+                    </LinearLayout>
+
+                    <!-- Allergies -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:paddingTop="@dimen/_16"
+                        android:paddingBottom="@dimen/_16">
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text = "Allergies"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Allergy"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:id = "@+id/patient_allergies"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop ="@dimen/_8"
+                        android:paddingBottom="@dimen/_8">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="@string/health_card"/>
+
+                        <TextView
+                            android:textColor="@color/colorLightGray"
+                            android:id="@+id/tv_hc_non_found"
+                            android:layout_margin="@dimen/_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_16"
+                            android:textAlignment="center"
+                            android:text="No Health Card Found!"/>
+                        <ImageView
+                            android:layout_margin="@dimen/_8"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id = "@+id/patient_health_card"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <!-- In Edit Mode View -->
+                <LinearLayout
+                    android:layout_margin="@dimen/_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="@dimen/_128"
+                                    android:layout_height="@dimen/_128"
+                                    android:id = "@+id/patient_profile_input_photo">
+
+                                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                                <Button
+
+                                    android:id="@+id/button_profile_photo_upload"
+                                    android:drawableStart="@drawable/ic_upload_photo"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Upload new photo"
+                                    android:drawablePadding="@dimen/_8"
+                                    android:textStyle="normal"
+                                    style="@style/Widget.AppCompat.ImageButton"
+                                    android:src="@drawable/ic_upload_photo"
+                                    android:background="@android:color/transparent"/>
+
+                            </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_4">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/first_name"/>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:id = "@+id/patient_first_name_input"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_4">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/last_name"/>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:id = "@+id/patient_last_name_input"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_4">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/birthday"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="date"
+                                    android:id = "@+id/patient_birth_date_input"/>
+
+                                <Button
+
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.25"
+                                    android:theme="@style/PrimaryFlatButton"
+                                    android:layout_height="wrap_content"
+                                    android:text="Select Date"
+                                    android:id="@+id/patient_select_birthdate_button"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop ="@dimen/_8"
+                        android:paddingBottom = "@dimen/_8">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop ="@dimen/_8"
+                            android:paddingBottom = "@dimen/_8">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/medical_conditions"/>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:id = "@+id/patient_medical_conditions_input"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop ="@dimen/_8"
+                            android:paddingBottom = "@dimen/_8">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/allergies"/>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:id = "@+id/patient_allergies_input"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop ="@dimen/_8"
+                            android:paddingBottom = "@dimen/_8">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/blood_type"/>
+                            <!--<EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:id = "@+id/patient_blood_type_input"/>-->
+                            <Spinner
+                                android:id="@+id/blood_type_selector"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/blood_types"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop ="@dimen/_8"
+                            android:paddingBottom = "@dimen/_8">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/height"/>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:id = "@+id/patient_height_input"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop ="@dimen/_8"
+                            android:paddingBottom = "@dimen/_8">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text = "@string/weight"/>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:id = "@+id/patient_weight_input"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop ="@dimen/_8"
+                        android:paddingBottom = "@dimen/_8">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop ="@dimen/_8"
+                            android:paddingBottom = "@dimen/_8">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/health_card"/>
+                            <Button
+                                android:layout_margin="@dimen/_24"
+                                android:drawableStart="@drawable/ic_upload_photo"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Upload new photo"
+                                android:drawablePadding="@dimen/_8"
+                                android:textStyle="normal"
+                                style="@style/Widget.AppCompat.ImageButton"
+                                android:src="@drawable/ic_upload_photo"
+                                android:background="@android:color/transparent"
+                                android:id="@+id/patient_upload_health_card_button"/>
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id = "@+id/patient_health_card_input"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ViewSwitcher>
+
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/header_about">
+        <menu>
+            <item
+                android:id="@+id/action_nav_terms_of_use"
+                android:icon="@drawable/ic_verified_user_grey_600_24dp"
+                android:title="@string/menu_terms_of_use" />
+
+        </menu>
+    </item>
+
+</menu>

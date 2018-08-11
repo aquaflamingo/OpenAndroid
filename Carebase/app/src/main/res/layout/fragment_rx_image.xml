@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_rx_image"
+    tools:context="com.hci.carebase.ui.activities.RxImageActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/navigation_header">
+        <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/rx_image_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:subtitleTextColor="@color/colorWhite"
+            app:navigationIcon="@mipmap/ic_launcher"
+            app:titleTextColor="@color/colorWhite"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+        <ImageView
+            android:id="@+id/perscription_image"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rx_image_title"
+            android:background="@color/cardview_dark_background"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rx_sample"/>
+    </RelativeLayout>
+</RelativeLayout>

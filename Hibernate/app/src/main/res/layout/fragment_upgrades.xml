@@ -1,0 +1,87 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView android:layout_margin="@dimen/_8"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/sku_upgrade_1_card" app:cardElevation="4dp">
+
+            <LinearLayout android:padding="@dimen/_16" android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+
+                <ImageView android:paddingRight="@dimen/_16" android:layout_marginLeft="@dimen/_4"
+                    android:layout_width="@dimen/_108" android:layout_height="@dimen/_108" />
+
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:id="@+id/sku_upgrade_1_title"
+                        android:text="@string/sku_upgrade_1_title" />
+
+                    <TextView android:layout_marginTop="@dimen/_8"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/sku_upgrade_1_desc" />
+
+                    <com.robertlevonyan.views.chip.Chip
+                        android:layout_margin="@dimen/_16"
+                        app:hasIcon="true"
+                        app:backgroundColor="@color/material_pink_500"
+                        app:textColor="@color/white"
+                        android:id="@+id/upgrade_1_chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/HibernateTheme"
+                        app:chipText="Chip Description 1"  />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView android:layout_margin="@dimen/_8"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/sku_upgrade_2_card" app:cardElevation="4dp">
+
+            <LinearLayout android:padding="@dimen/_16" android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+
+                <ImageView android:paddingRight="@dimen/_16" android:layout_marginLeft="@dimen/_4"
+                    android:layout_width="@dimen/_108" android:layout_height="@dimen/_108"/>
+
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:id="@+id/sku_upgrade_2_title"
+                        android:text="@string/sku_upgrade_2_title" />
+
+                    <TextView android:layout_marginTop="@dimen/_8"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/sku_upgrade_2_desc" />
+
+                    <com.robertlevonyan.views.chip.Chip
+                        android:layout_margin="@dimen/_16"
+                        app:hasIcon="true"
+                        app:backgroundColor="@color/material_pink_500"
+                        app:textColor="@color/white"
+                        android:id="@+id/upgrade_2_chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/HibernateTheme"
+                        app:chipText="Chip Description 2"  />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

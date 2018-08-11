@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pressurelabs.hibernate.ui.activities.MainActivity">
+    <item
+        android:id="@+id/action_introduction"
+        android:title="@string/intro"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="Debug"
+        android:id="@+id/action_debug"
+        app:showAsAction="never"/>
+
+</menu>

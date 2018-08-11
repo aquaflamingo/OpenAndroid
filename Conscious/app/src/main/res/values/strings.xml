@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Conscious</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="default_key_not_found">Key not found.</string>
+    <string name="default_no_user_name">Hello, Stranger.</string>
+    <string name="menu_terms_of_use">LICENCE</string>
+    <string name="menu_you">You</string>
+    <string name="title_activity_debug">Developer Panel</string>
+    <string name="title_activity_speech">Speak</string>
+    <string name="speak_your_mind">Speak your mind.</string>
+    <string name="action_debug">Debug Panel</string>
+    <string name="tv_debug_subhead">Welcome to the magical developer panel. Something tells me you probably shouldn\'t be here..</string>
+    <string name="debug_read_db">Read database</string>
+    <string name="debug_seed_db">Seed Database</string>
+    <string name="default_cardview_title">Zen Proverb.</string>
+    <string name="default_cardview_body">Sit, walk or run, don\'t wobble.</string>
+    <string name="default_cardview_time_stamp">02/01/2017, 11:11AM</string>
+    <string name="action_search_thoughts">Explore</string>
+    <string name="fab_label_speak">Speak</string>
+    <string name="fab_label_express">Express</string>
+    <string name="debug_read_search">Query</string>
+    <string name="title_activity_express">ExpressActivity</string>
+    <string name="tv_express_chars_remaining">500</string>
+    <string name="et_express_thought_title_hint">Title</string>
+    <string name="et_express_thought_body_hint">Express your mind.</string>
+    <string name="text_filter_et_express_title">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\'\":/?.+)(*^%$#@!~`=_;[]}{;</string>
+    <string name="action_commit">Commit</string>
+    <string name="default_failed_action">Action can\'t be performed at this time.</string>
+    <string name="express_commit_failed_both_invalid">Title and body can\'t be empty</string>
+    <string name="express_commit_dialog_title">Commits are permanent</string>
+    <string name="express_commit_dialog_msg">Part of your thought title/body is empty.\nAre you sure you want to leave it this way?</string>
+    <string name="express_commit_dialog_positive">Yep</string>
+    <string name="express_commit_dialog_negative">Ahh No!</string>
+    <string name="express_navigate_away_dialog_title">Thought will be lost.</string>
+    <string name="express_navigate_away_dialog_message">There are no drafts. You will lose this thought. Are you sure?</string>
+    <string name="express_navigate_away_dialog_positive">Discard</string>
+    <string name="express_navigate_away_dialog_negative">Continue</string>
+    <string name="express_commit_dialog_neutral">Commit, and don\'t show again</string>
+    <string name="menu_peer_share">Share with peers.</string>
+    <string name="tv_plabs_tagline">There are always new ideas to build.</string>
+    <string name="tv_about_special_thanks">Special Attributions To:</string>
+    <string name="tv_about_attributions">Google Material Design for icons.\nFreePik for incredible illustrations creative commons illustrations.</string>
+    <string name="terms_of_use_text">"Copyright 2017 (c), Pressure Labs \n Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. \nYou may obtain a copy of the License at\n\n(http://www.apache.org/licenses/LICENSE-2.0)\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License."
+    </string>
+    <string name="terms_of_use_title">Terms of Use</string>
+    <string name="about_title">About</string>
+    <string name="default_not_available">Not available.</string>
+    <string name="default_cardview_hash">No hash.</string>
+    <string name="title_activity_login">@string/app_name</string>
+
+    <!-- Strings related to login -->
+    <string name="app_subhead">When minds wander.</string>
+    <string name="et_hint_login">What can we call you?</string>
+    <string name="toast_login_not_valid">Please, don\'t be shy. Everyone needs a name.</string>
+    <string name="description_pressurelabs_logo">The Pressure Labs logo.</string>
+    <string name="button_social_plabs_twitter">\@PressureLabs</string>
+    <string name="button_social_plabs_facebook">Facebook</string>
+    <string name="button_social_plabs_github">GitHub</string>
+    <string name="description_conscious_app_icon">The conscious app icon.</string>
+    <string name="title_slide_welcome">Welcome. Want to help?</string>
+    <string name="title_slide_welcome_alt">Welcome to Conscious</string>
+    <string name="description_slide_welcome_alt">
+        "We're interested in understanding more about thoughts and the ideas of people."
+    </string>
+    <string name="description_slide_welcome">
+        "With Conscious we're trying to create a network for distributing thoughts and ideas."
+        "\n\nIf you opt in you can anonymously share your thoughts in the future to help us in our goal."
+    </string>
+    <string name="title_slide_dmn">What you\'re here for..</string>
+    <string name="description_slide_dmn">
+       "The goal of Conscious is to create a space for distributing intellectual ideas, anonymously."
+        "\n\nWe want to facilitate inspiration and Aha! moments, and create a place for medium-length thought sharing"
+    </string>
+    <string name="title_slide_scattered">Capture scattered thoughts.</string>
+    <string name="description_slide_scattered">
+        "Conscious is a place to store your scattered longer-form thoughts, ideas and insights."
+        "\n\nYou can search or explore your thoughts at any time."
+    </string>
+    <string name="title_slide_no_drafts">
+        "You can\'t unthink thoughts."</string>
+    <string name="description_slide_no_drafts">
+        "You can\'t edit or unthink your thoughts in real life."
+        "\n\nIn Conscious, once you've committed a thought, it cannot be edited or deleted."
+        "\n\nAll data is located on your phone, and there currently are no backups."
+    </string>
+    <string name="button_slide_cta_label">I\'m in.</string>
+    <string name="menu_change_name">Change Name</string>
+    <string name="dialog_name_change_title">Change Name.</string>
+    <string name="dialog_name_change_hint">What should we call you?</string>
+    <string name="dialog_name_change_positive">Finish</string>
+    <string name="menu_goal">The Goal</string>
+    <string name="header_about">About</string>
+    <string name="tv_research_title">What is the point of Conscious?</string>
+    <string name="tv_research_desc">
+        "The goal of Conscious is to eventually create a space for distributing intellectual ideas, anonymously."
+        "\n\nWe want to facilitate inspiration and Aha! moments, and create a place for medium-length thought sharing"
+        "\n\nCurrently the program is being actively built."
+    </string>
+    <string name="menu_opt_out">Opt In/Out</string>
+    <string name="dialog_opt_out_title">Opt In/Out</string>
+    <string name="dialog_opt_out_message">
+        "We're trying to understand thoughts better. "
+        "\n\nBy opting in no personal information is tied back to your entries, but you give us permission to read and analyze the thoughts you commit."
+    </string>
+    <string name="dialog_opt_out_positive">Opt In</string>
+    <string name="dialog_opt_out_negative">No thanks</string>
+    <string name="express_first_commit_dialog_title">Heads up, Commits are permanent!</string>
+    <string name="express_first_commit_dialog_msg">You cannot change, edit or delete a thought after it has been committed.</string>
+    <string name="dialog_response_nevermind">Nevermind</string>
+    <string name="menu_speak_icon">Speak</string>
+    <string name="tv_login_enter_pin">Enter 4 Digit PIN</string>
+    <string name="login_error_message">Incorrect PIN.</string>
+    <string name="menu_change_pin">Change PIN</string>
+    <string name="dialog_pin_change_title">Change PIN</string>
+    <string name="dialog_pin_change_hint">4 digits.</string>
+    <string name="dialog_pin_change_content">Do not forget this PIN. There is currently no way to reset it.</string>
+    <string name="file_salt">salt</string>
+    <string name="file_pin">pin</string>
+    <string name="dialog_remember_your_pin">Remember Your PIN!</string>
+    <string name="dialog_remember_your_pin_content">There are no backups. If you forget your PIN you\'ll need to reset and lose everything.</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_pin_lock_description">If enabled, you can only access the app by entering a PIN.</string>
+    <string name="pref_pin_lock_title">Enable PIN Lock</string>
+    <string name="pref_title_user_name">Your Name</string>
+    <string name="pref_description_user_name">What should we call you?</string>
+    <string name="pref_title_pin_enabled">Enabled PIN</string>
+    <string name="pref_description_pin_enabled">Lock your thoughts in Conscious using a PIN only you know.</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="welcome">Welcome Back.</string>
+    <string name="pinlock_enabled">Pin Lock Enabled</string>
+    <string name="pinlock_disabled">Pin Lock Disabled</string>
+    <string name="button_reset_app">Hint</string>
+    <string name="pref_description_recognition_input_length">Length of speech before recording</string>
+    <string name="pref_description_recognition_silence">Silence time to wait after speech to record</string>
+    <string name="pref_title_voice_recognition">Voice Recognition</string>
+    <string name="pref_section_extra">Extra Settings</string>
+    <string name="toast_preferences_saved">Preferences Saved!</string>
+    <string name="about_app">This app was created by Pressure Labs, and is licenced under Apache 2.0 Licence. All artworks belong to their respective creators sourced from Creative Commons repositories and credited in the attribution section. All markings, logos or text related to the branding of Pressure Labs are trademarked, and not subject to the licence below. This app was created by Robert Simoes. I hope you use it as an opportunity to learn more and improve your android ability. Please note the official licence text below for specific information.</string>
+</resources>
