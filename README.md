@@ -1,8 +1,8 @@
-# 📱Android Examples
+# 📱Open Android
 
 ## About
 
-This repository contains examples of Android applications built previously.
+This repository contains previously built Android applications that have been open sourced.
 
 - [Hibernate](Hibernate/README.md) - Circadian Rhythm Alarm Clock
 - [Carebase](Carebase/README.md) - Patient-Doctor Medical Communications
