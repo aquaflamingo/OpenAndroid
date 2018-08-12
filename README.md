@@ -4,9 +4,9 @@
 
 This repository contains previously built Android applications that have been open sourced.
 
-- [Hibernate](Hibernate/README.md) - Circadian Rhythm Alarm Clock
-- [Carebase](Carebase/README.md) - Patient-Doctor Medical Communications
-- [Conscious](Hibernate/README.md) - Immutable Journaling App
+- [Hibernate](Hibernate) - Circadian Rhythm Alarm Clock
+- [Carebase](Carebase) - Patient-Doctor Medical Communications
+- [Conscious](Hibernate) - Immutable Journaling App
 
 ## Author
 
