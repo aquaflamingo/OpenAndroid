@@ -6,13 +6,13 @@ This repository contains previously built Android applications that have been op
 
 - [Hibernate](Hibernate) - Circadian Rhythm Alarm Clock
 - [Carebase](Carebase) - Patient-Doctor Medical Communications
-- [Conscious](Hibernate) - Immutable Journaling App
+- [Conscious](Conscious) - Immutable Journaling App
 
 ## Author
 
 [@RobertSimoes](www.robertsimoes.com)¹
 
-¹: contributors are specified where applicable in their respective projects.
+¹: other authors and contributors are specified in their respective projects.
 
 ## Licence
 
