@@ -1,4 +1,6 @@
 #### An ecosystem for distributing ideas
+[![Project Status: Abandoned – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.](https://www.repostatus.org/badges/latest/abandoned.svg)](https://www.repostatus.org/#abandoned)
+
 [<img src="http://imgur.com/Rai30q4.png"  height="60">](https://play.google.com/store/apps/details?id=com.pressurelabs.conscious)
 [<img src="https://cdn.worldvectorlogo.com/logos/slack.svg" height="60px"/>](http://pressurelabs.slack.com)
 
@@ -33,6 +35,4 @@ If you choose to copy and or modify this work for your own project or purposes, 
 
 ## Copyright 2017
 This work is copyrighted by
-[@RobertSimoes](http://www.robertsimoes.com)
-[@PressureLabs](http://www.pressurelabs.com)
 
